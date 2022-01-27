@@ -1,0 +1,452 @@
+
+
+/* creer les pages blog et contact
+*/
+*{
+    scroll-behavior: smooth !important;
+    }
+
+
+
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('/Projet-Site/tp_images_polices/polices/ballpark.eot');
+    src: url('/Projet-Site/tp_images_polices/polices/ballpark.woff') format('woff'),
+         url('/Projet-Site/tp_images_polices/polices/ballpark.ttf') format('truetype'),
+         url('/Projet-Site/tp_images_polices/polices/ballpark.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html
+{
+    background-color: black;
+   
+    scroll-behavior: smooth;
+    
+}
+
+#mainWrapper
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 100%;
+    height:100%;
+    margin: auto;
+    position:relative;
+}
+
+#titre
+{
+    display:flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+header
+{
+    display: flex;
+    position:relative;
+    top:0px;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    color:white;
+    z-index: 1;
+
+}
+
+
+
+#logo
+{
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+
+#logo img
+{
+    width: 50px;
+    height: 50px;
+    margin:auto;
+}
+
+
+
+
+
+h1, h2, h3
+{
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+
+nav ul
+{
+    list-style: none;
+    padding-right: 30px;
+}
+
+nav li
+{
+    display: inline;
+}
+
+
+a
+{
+    color: white;
+    text-decoration: none;
+    padding:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:larger;
+}
+
+
+.diaporama
+{
+    display: flex;
+    width:100%;
+    height: 500px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 5px;
+   
+}
+
+.responsive
+{
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.texteDiapo 
+{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+ 
+}
+.texteDiapo p
+{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.texteDiapo button
+{
+    position: absolute;
+    right: 85px;
+    bottom: 10px;
+    background: linear-gradient(45deg, #edbb15, #937100);
+    color: white;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    padding:10px;
+    font-size: large;
+}
+
+
+.texteDiapo button:hover 
+{
+box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+transform: translateY(-5px);
+}
+
+
+.a
+{
+    color:white
+}
+
+
+.text-home
+{
+    position: relative;
+    background-color: white;
+    text-align: justify;
+    padding:10px;
+    font-family:'BallparkWeiner';
+    flex:3;
+}
+
+.text-home h2
+{
+    text-align: center;
+}
+
+.text-home p, .text-home h2
+{
+    padding: 15px;
+
+}
+
+
+.button
+{
+    color: white;
+    background: linear-gradient(45deg, tomato, #9198e5);
+    padding: 5px;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    position:absolute;
+    right: 10%;
+   
+}
+
+.button:hover {
+    background-color:grey;
+    box-shadow: 0px 15px 20px ;
+    transform: translateY(-10px);
+  }
+
+
+
+.infoComp
+{
+    position: relative;
+    flex: 1.5;
+    background-color:rgb(0, 0, 0);
+    box-shadow: 0px 2px 5px #1c1a19;
+    color:white;
+    text-align: justify;
+    padding:10px;
+    border-style:solid;
+    border-width: 1px;
+    border-top-left-radius:50px;
+}
+
+
+
+.infoComp p
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    padding:10px;
+}
+
+.infoComp h2
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:10px;
+    text-align: center;
+
+}
+
+#bulle
+{
+    position: absolute;
+    left:-12px;
+}
+
+.imageAuteur
+{
+    text-align: center;
+}
+
+
+article
+{
+    display: flex;
+    position:relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+article p
+{
+    min-width: 300px;
+    flex:2;
+    padding: 15px;
+    margin:auto;
+    text-align:justify;
+}
+
+
+#footer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin:auto;
+    margin-top: 50px;
+    padding-top: 25px;
+   }
+
+
+.lienImage
+{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/*#footer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    justify-content: space-between;
+    background: url('../Projet-Site/tp_images_polices/images/ico_top.png') no-repeat top center,
+    url('./tp_images_polices/images/ombre.png') repeat-x top;
+    height: auto;
+    width: 100%;
+    margin:auto;
+    margin-top: 50px;
+    padding-top: 25px;
+   }
+*/
+
+
+
+
+
+.coordonnees, .photo, .liens
+{
+    flex:1;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px;
+    background: linear-gradient(45deg, #edbb15, #937100);
+    margin:5px;
+}
+
+
+.coordonnees, .liens
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white
+
+}
+
+.photo
+{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+
+.liens ul
+{
+    list-style: none;
+    padding-inline-start: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+@media all and (max-width: 1024px)
+{
+    .text-home p
+    {
+       color:blueviolet;
+       width:auto;
+       margin-bottom:15px;
+       border-bottom: 15px;
+    }
+
+    .diaporama
+    {
+        display:none;
+    }
+
+    article
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: cadetblue;
+    }
+
+    .infoComp
+    {
+        width:auto;
+        background-color: brown;
+    }
+
+
+    .button
+    {
+        border:15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

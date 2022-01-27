@@ -1,0 +1,52 @@
+*{
+  color: blue;
+}
+
+
+
+ul {
+  display: block;
+  width: 200px;
+}
+ul li {
+  display: block;
+}
+ul li a {
+  display: block; 
+  border: 1px solid #000;
+  background: rgb(135, 143, 21);
+}
+ul li a {
+  display: block; 
+  border: 1px solid #000;
+  background: rgb(95, 36, 97);
+  
+}
+ul li ul {
+  display: none;
+}
+ul li ul.permahover {
+  display: block;
+}
+
+.wrap {
+  background-color: #999;
+  width: 200px;
+  overflow: hidden;
+}
+.content {
+  width: 100%;
+  margin-left: 100%;
+  background-color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+

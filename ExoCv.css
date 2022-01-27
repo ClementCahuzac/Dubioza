@@ -1,0 +1,85 @@
+
+
+#mainWrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+
+#aside
+{
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(#e0c632, #4c518b);
+    flex: 1;
+    height:900px;
+}
+
+.photo
+{
+    margin:auto;
+}
+
+#colonne
+{
+    text-align: justify;
+    margin:5px;
+    padding:2px;
+}
+
+
+
+#content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height:80%;
+    flex:4;
+}
+
+.exp, .comp, .formation
+{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    padding:5px;
+    margin-left:5px;
+    border-style: dotted;
+}
+
+h2
+{
+    text-align: center;
+}
+
+
+
+@media all and (max-width:1000px)
+{
+  article
+  {
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: chartreuse;
+      margin:20px;
+      border:10px;
+  }   
+
+  #aside 
+  {
+      background:white;
+      color:tomato
+  }
+
+
+}
+
+
+
+
+

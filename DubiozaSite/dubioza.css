@@ -1,0 +1,800 @@
+@font-face {
+    font-family: 'barlow_semi_condensedblack';
+    src: url('/DubiozaSite/webfontkit-20211125-071353/barlowsemicondensed-black-webfont.woff') format('woff'),
+         url('/DubiozaSite/webfontkit-20211125-071353/barlowsemicondensed-black-webfont.woff2') format('woff2');
+         
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'barlow_semi_condensedbold';
+    src: url('/DubiozaSite/webfontkit-20211125-071353/barlowsemicondensed-bold-webfont.woff2') format('woff2'),
+         url('/DubiozaSite/webfontkit-20211125-071353/barlowsemicondensed-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'barlow_semi_condensedlight';
+    src: url('/DubiozaSite/webfontkit-20211125-071353/barlowsemicondensed-light-webfont.woff2') format('woff2'),
+         url('/DubiozaSite/webfontkit-20211125-071353/barlowsemicondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+
+html
+{
+    background-color: rgb(0, 0, 0);
+    font-family:'barlow_semi_condensedlight';
+    overflow-x: hidden;
+    }
+
+body
+{
+    margin:auto;
+}
+
+p {
+    font-family:'barlow_semi_condensedlight';
+
+}
+
+a{
+    color: white;
+}
+
+
+h2
+{
+    font-weight: bold;
+    font-size:xx-large;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family:'barlow_semi_condensedblack';
+}
+
+
+
+
+
+
+/* HEADER */
+
+header
+{
+    background-color: tomato;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-image: url(/DubiozaSite/dk_header_2020.jpg);
+    background-size: cover;
+    background-position: center calc(0% + 0px);
+    min-height: calc(100vh);
+    height: 100px;
+    width: 100%;
+}
+
+
+#logo{
+    width: 95px;
+    margin-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+#logo:hover + h1
+{
+    display:block;
+    animation: fadeIn 500ms both;
+}
+
+
+
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -50%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+h1
+{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'barlow_semi_condensedbold';
+    font-size: 30px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+#navStatic
+{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    
+    background-image: linear-gradient(to bottom,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
+    width: 100%;
+}
+
+nav img
+{
+    position: fixed;
+    top:33px;
+    right:24px;
+    width: 25px;
+    filter:invert(100%);
+}
+
+
+#arrow
+{
+    width: 40px;
+    filter:invert(100%);
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%) translateX(-12px);
+}
+
+
+
+
+
+
+
+
+
+
+#menuBurger{
+    position:absolute;
+    top:0px;
+    background: rgba(0, 0, 0, 0.938);
+    color: grey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#cross{
+    filter:invert(100%);
+    width: 20px;
+    position:absolute;
+    top:50px;
+    right:50px;
+}
+
+
+
+li {
+    font-family: 'barlow_semi_condensedbold';
+    font-size: 24px;
+    list-style-type: none;
+    padding-top: 15px;
+
+}
+
+ul{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-bottom: 40px;
+    }
+
+
+#menuBurger p{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+#zoneEmailMenuBurger
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 40px;
+}
+
+
+
+.emailBurger form input{
+    border:none;
+    width: 200px;
+    border: 1px solid rgb(70, 70, 70);
+
+}
+
+
+.emailBurger ::placeholder{
+    color: grey;
+}
+
+.emailBurger button{
+    text-transform: uppercase;
+    font-family: 'barlow_semi_condensedbold';
+    color: #666;
+    font-size: 16px;
+    line-height: 38px;
+    width: 100px;
+}
+
+
+
+
+
+/* ARTICLE */
+article
+{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid;
+    border-color:rgb(53, 53, 53);
+    padding-bottom: 30px;
+}
+
+
+
+#lesConcerts{
+    font-size: 22px;
+    font-weight: bold;
+    margin:50px;
+}
+
+
+.ticket{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #1c1c1c;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.ticket:hover{
+    background-color: rgba(255,255,255,.1);
+}
+
+.date, .venue, .buttonTicket{
+    height:100px;
+    display: flex;
+    align-items: center;
+    }
+
+.date{
+    min-width: 10%;
+}
+
+.dateDay{
+    font-size: 49px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+
+.border{
+    border-right: 1px solid rgba(255,255,255,.7);
+    padding-right:25px;
+    padding-left:1px;
+}
+
+
+
+.venue {
+    min-width: 80%;
+    padding-left: 15px;
+}
+
+.buttonTicket{
+    min-width: 10%;
+    display:flex;
+    justify-content: center;
+}
+
+a.button{
+    border: 1px solid rgba(255,255,255,.7);
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-weight: bold;
+    text-decoration:none
+}
+
+
+a.button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+a.buttonSoldOut{
+border: 1px solid rgba(255,255,255,.7);
+background-color: #eb3838;
+padding: 10px 30px 10px 30px;
+text-transform: uppercase;
+font-size: .875rem;
+font-weight: bold;
+text-decoration:none
+}
+
+a.buttonSoldOut:hover{
+    color: black;
+    border-color: black;
+}
+
+
+
+.btnConcert{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.btnC{
+    margin: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.showAllDates{
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.chevron{
+    filter: invert(100%);
+    width: 15px;
+}
+
+
+
+
+
+.ticket:nth-child(1) 
+{
+    color: #ffca08;
+    
+}
+
+.ticket:nth-child(1) :nth-child(1) :nth-child(2){
+    border-right: 1px solid #ffca08;
+}
+
+
+
+
+
+article h2, article button
+{
+    align-self: center;
+}
+
+
+
+
+
+/* SECTION */
+section
+{
+    background-color: #eee;
+    text-transform: uppercase;
+}
+
+section div
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+section h2
+{
+    text-align: center;
+}
+
+#music
+{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.box {
+    position: relative;
+    width: 100%;
+    max-width: 25%;
+ }
+ .box .img1 {
+    width: 100%;
+    height: auto;
+ }
+ .box .btnHover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:none;
+    background-color: black;
+    color: #ffca08;
+    text-transform: uppercase;
+    font-family:'barlow_semi_condensedblack';
+    padding: 15px 30px 15px 30px;
+    font-size: .875rem;
+    border:hidden;
+ }
+
+
+ img:hover + .btnHover, .btnHover:hover{
+     display:inline-block;
+     
+ }
+
+
+ .btnHover:hover{
+     color: white;
+ }
+
+
+
+.shopCart{
+    filter: invert(81%) sepia(68%) saturate(2281%) hue-rotate(349deg) brightness(100%) contrast(104%);
+    width:20%;
+    height: 42%;
+    position: absolute;
+    top:25%;
+    left:5px;
+}
+
+
+
+
+.btnHover:hover > .shopCart
+{
+    filter: invert(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.chevronMusic{
+    position: relative;
+}
+
+.chevron1, .chevron2{
+    filter: invert(100%);
+    width: 15px;
+    position:absolute
+}
+
+
+
+.chevron1{
+    transform: rotate(180deg);
+    left:25px;
+    top:40%;
+    background-color: rgba(255,255,255,.4);
+    height: 50px;
+    width: 50px;
+    padding:10px;
+}
+
+.chevron2{
+    background-color: rgba(255,255,255,.4);
+    height: 50px;
+    width: 50px;
+    padding:10px;
+    right:25px;
+    top:40%;
+
+}
+
+
+
+
+#store
+{
+    display:flex;
+    flex-direction: column;
+    color: #333;
+}
+
+#store .imgSection img
+{
+    display: flex;
+    flex-direction: row ;
+    align-content:space-around;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* Zone EMAIL */
+#zoneEmail
+{
+    background-color: #ffca08;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#zoneEmail p
+{
+    font-family: 'barlow_semi_condensedlight';
+    font-weight: bolder;
+    font-size: x-large;
+    
+}
+
+
+#zoneEmail button
+{
+    background-color: transparent;
+    border: 1px solid;
+    text-transform: uppercase;
+    font-family: 'barlow_semi_condensedlight';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0 30px;
+    
+}
+
+
+#zoneEmail button:hover
+{
+    color: #ffca08;
+    background-color: black;
+}
+
+
+form input
+{
+    background-color: rgba(255,255,255,.1);
+    border: 1px solid;
+    line-height: 38px;
+    width: 350px;
+    padding-left: 10px;
+}
+
+::placeholder
+{
+    color: black;
+    font-family:'barlow_semi_condensedlight';
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+/* VIDEO */
+#videoYT
+{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+#video
+{
+    width: 100%;
+}
+
+
+
+
+
+/* FOOTER */
+footer
+{
+    display:flex;
+    flex-direction: column;
+    color:white;
+    text-transform: uppercase;
+}
+
+
+
+footer h2
+{
+    padding: 0;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+#footer1
+{
+    background-color: #ffca08;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color:black;
+    height: 300px;
+    position: relative;
+
+}
+
+
+
+
+
+#blocContact
+{
+    text-align: center;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+
+#blocBooking
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height:300px;
+}
+
+
+
+
+#blocBooking button
+{
+    background-color: black;
+    border: none;
+    color: #ffca08;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 40px;
+    line-height: 53px;
+    margin-top: 50px;
+}
+
+#blocBooking button:hover
+{
+    color: white;
+}
+
+
+
+
+
+#footer2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    text-transform: capitalize;
+}
+
+
+
+#footer2 p
+{
+    color: rgba(255,255,255,.5);
+    font-size: 18px;
+}
+
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: rgba(255,255,255,.5);
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.5);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+#logoRS
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+#footer2 img
+{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
