@@ -119,4 +119,20 @@ $(function () {
 // pop up on load 
 
 
+// slider
+
+$(document).ready(function(){
+  $('.multiple-items').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows:true,
+    infinite: true,
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='chevron.png'>",
+    nextArrow:"<img class='a-left control-c prev slick-next' src='chevron.png'>",
+  });
+});
+
+
+
+
 

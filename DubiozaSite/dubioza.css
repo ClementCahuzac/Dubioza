@@ -112,7 +112,7 @@ header
 
 #logo{
     width: 95px;
-    margin-left: 20px;
+    
     padding-top: 2px;
     padding-bottom: 10px;
 }
@@ -291,9 +291,8 @@ article
     flex-direction: column;
     background-color: black;
     color: white;
-    border-bottom: 1px solid;
-    border-color:rgb(53, 53, 53);
-    padding-bottom: 30px;
+   
+    
 }
 
 
@@ -473,6 +472,12 @@ section h2
     color: white;
 }
 
+#music > h2 {
+    border-top: 1px solid;
+    border-color:rgb(53, 53, 53);
+    padding-top:50px;
+}
+
 
 
 
@@ -485,12 +490,23 @@ section h2
     width: 100%;
     height: auto;
  }
- .box .btnHover {
+
+.align-button {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+
+
+ .multiple-items .btnHover {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display:none;
+    top: 60%;
+    left: 40%;
+    opacity: 0;
     background-color: black;
     color: #ffca08;
     text-transform: uppercase;
@@ -498,18 +514,22 @@ section h2
     padding: 15px 30px 15px 30px;
     font-size: .875rem;
     border:hidden;
-    transition: 2s;
+    
+    
  }
 
 
  img:hover + .btnHover, .btnHover:hover{
      display:inline-block;
-     
+     top:41%;
+     opacity: 1;
+     transition: .5s ease-out;
+   
  }
-
 
  .btnHover:hover{
      color: white;
+    
  }
 
 
@@ -530,7 +550,6 @@ section h2
 {
     filter: invert(100%);
 }
-
 
 
 
@@ -825,5 +844,48 @@ footer h2
 
 
 /* Pop Up */
+
+
+
+
+/* slider */
+
+
+.slider-slick {
+    width: 100%;
+}
+
+
+.slick-prev{
+    position:absolute;
+    left:0%;
+    top:40%;
+    z-index:1;
+    filter: invert(100%);
+    transform: rotate(180deg);
+    background-color: rgba(255,255,255,.4);
+    height: 50px;
+    width: 50px;
+    padding:10px;
+}
+
+.slick-next{
+    position:absolute;
+    right:0%;
+    top:40%;
+    z-index:1;
+    filter: invert(100%);
+    background-color: rgba(255,255,255,.4);
+    height: 50px;
+    width: 50px;
+    padding:10px;
+}
+
+
+.slick-slide{
+    position:relative;
+}
+
+
 
 
