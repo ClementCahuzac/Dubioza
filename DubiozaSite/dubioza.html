@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="dubioza.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="/DubiozaSite/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     </head>
 
@@ -18,10 +19,10 @@
         <header>
 
             <div id="navStatic">
-                <img id="logo" src="logo-dubioza-kolektiv_v2.png" alt="">
-                <h1>dubioza <br />kolektiv</h1>
+                <img id="logo" src="logo-dubioza-kolektiv_v2.png" alt="" >
+                <h1 id="titreScroll">dubioza <br />kolektiv</h1>
                 <nav id="menuBurgerClick">
-                    <img  src="../DubiozaSite/menu.png" alt="" >
+                    <img  src="../DubiozaSite/menu.png" alt="" id="imageMenu1" onclick="changeImage()">
                 </nav>
             </div>
 
@@ -38,16 +39,16 @@
         <body>
             <section id="menuBurger" style="display: none;">
                 <img id="logo" src="logo-dubioza-kolektiv_v2.png" alt="">
-                <img id="cross" src="/DubiozaSite/cancel.png" alt="">
+        
                 <ul>
                     <li>Tour dates</li>
                     <li>Music</li>
-                    <li>Videos</li>
+                    <li><a href="https://www.youtube.com/dubiozatv" target="blank">Videos</a></li>
                     <li>About us</li>
                     <li>Contacts</li>
                     <li>Shop</li>
                 </ul>
-
+                
 
                 <div id="zoneEmailMenuBurger">
                     <p>SUBSCRIBE TO NEWSLETTERS</p>
@@ -63,11 +64,11 @@
 
                 <p>SOCIAL NETWORKS</p>
                 <div>
-                    <p><img src="/tp_images_polices/images/facebook.png"></p>
-                    <p><img src="/tp_images_polices/images/twitter.png"></p>
-                    <p><img src="/tp_images_polices/images/vimeo.png"></p>
-                    <p><img src="/tp_images_polices/images/rss.png"></p>
-                    
+                    <p><img src="/tp_images_polices/images/iconmonstr-facebook-6.svg" class="filterImage"></p>
+                    <p><img src="/tp_images_polices/images/iconmonstr-instagram-11.svg" class="filterImage"></p>
+                    <p><img src="/tp_images_polices/images/iconmonstr-youtube-6.svg" class="filterImage"></p>
+                    <p><img src="/tp_images_polices/images/iconmonstr-twitter-1.svg" class="filterImage"></p>
+
                 </div>
 
 
@@ -337,12 +338,16 @@
 
             <div id="footer2">
                 <div id="logoRS">
-                    <p><img src="/tp_images_polices/images/facebook.png"></p>
-                    <p><img src="/tp_images_polices/images/twitter.png"></p>
-                    <p><img src="/tp_images_polices/images/vimeo.png"></p>
-                    <p><img src="/tp_images_polices/images/rss.png"></p>
-                    
+             
+                    <p><img src="/tp_images_polices/images/iconmonstr-facebook-6.svg" class="filterImage"></p>
+                    <p><img src="/tp_images_polices/images/iconmonstr-instagram-11.svg" class="filterImage"></p>
+                    <p><img src="/tp_images_polices/images/iconmonstr-youtube-6.svg" class="filterImage"></p>
+                    <p><img src="/tp_images_polices/images/iconmonstr-twitter-1.svg" class="filterImage"></p>
+
                 </div>
+
+
+
                 <h1>
                     dubioza kolektiv
                 </h1>

@@ -42,7 +42,13 @@ ul li ul.permahover {
 
 
 
+header{ padding:0px; position: sticky; top:0px; left:0px; background: #FFF; z-index: 1000;}
+header.fixed-header{box-shadow: 20px 4px 10px rgba(39, 59, 69, 0.2);}
 
+header .logo img{width:200px; transition: all linear .5s}
+header.fixed-header .logo img{width:100px;}
+
+.box-height{ height:500px;}
 
 
 
