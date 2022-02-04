@@ -105,7 +105,18 @@ $(function(){
 });
 
 
+// ajouter dynamiquement du contenu html
+$(function () {
+  var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = 'snippets/' + $(this).data('include') + '.html'
+    $(this).load(file)
+  })
+})
 
+
+
+// pop up on load 
 
 
 

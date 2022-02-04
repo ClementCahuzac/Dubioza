@@ -302,6 +302,7 @@ article
     font-size: 22px;
     font-weight: bold;
     margin:50px;
+   
 }
 
 
@@ -309,10 +310,11 @@ article
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #1c1c1c;
-    margin-left:45px;
-    margin-right:45px;
+    max-width: 1200px;
+    margin : auto;
     padding-left:10px;
     padding-right:10px;
+    
 }
 
 .ticket:hover{
@@ -325,9 +327,6 @@ article
     align-items: center;
     }
 
-.date{
-    min-width: 10%;
-}
 
 .dateDay{
     font-size: 49px;
@@ -499,6 +498,7 @@ section h2
     padding: 15px 30px 15px 30px;
     font-size: .875rem;
     border:hidden;
+    transition: 2s;
  }
 
 
@@ -824,10 +824,6 @@ footer h2
 
 
 
-
-
-
-
-
+/* Pop Up */
 
 
